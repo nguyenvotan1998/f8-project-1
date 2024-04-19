@@ -1,0 +1,765 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primary_text_title: #000336;
+  --primary_text_para: #000336;
+  --primary_btn: #0e1b4c;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: transparent;
+}
+
+/* common */
+.content {
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+.btn {
+  height: 50px;
+  border: none;
+  background-color: var(--primary_btn);
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  color: #000339;
+}
+
+.desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7d8589;
+}
+
+.line {
+  width: 41px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+}
+
+/* TODO: Header */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #e6f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .content {
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* TODO: Top of Header */
+.header .top {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nav of Header Top */
+.header .top .nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header .top .nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4f5361;
+}
+
+/* Action Button of Header Top */
+.header .top .action {
+  display: flex;
+}
+
+.header .top .action .btn {
+  width: 98px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.header .top .action .sign-in {
+  background-color: transparent;
+  color: var(--primary_btn);
+}
+
+/* TODO: Hero of Header */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .left .desc-1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: #687690;
+  margin-bottom: 8px;
+}
+
+.hero .left .title {
+  width: 559px;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 76px;
+  color: var(--primary_text_title);
+  margin-bottom: 30px;
+}
+
+.hero .left .desc-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5a6473;
+  margin-bottom: 40px;
+}
+
+.hero .left .hero-cta {
+  width: 170px;
+  height: 50px;
+}
+
+.hero .hero-img {
+  width: 100%;
+}
+
+/* TODO: Clients */
+.client {
+  height: 312px;
+  margin-top: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client .content {
+  /* height: 228px; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.client .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client .left {
+}
+
+.client .left .logo {
+  margin-bottom: 23px;
+}
+
+.client .right {
+}
+
+.client .right .star {
+  width: 60px;
+  height: 18px;
+  background-color: red;
+  background-image: url("../image/Vector.svg");
+  background-repeat: repeat-x;
+  background-origin: content-box;
+}
+
+/* TODO: Logo, Star and Desc for Clients */
+.client > .content > div > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client > .content > div > .row-01 {
+  margin-bottom: 23px;
+}
+
+.client .content > .client-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Brand of Client */
+.client .brand-logo {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TODO: Guides */
+.guides {
+  margin-top: 40px;
+  height: 585px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guides > .content {
+  width: 685px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TODO: Guide Title and Desc for Guides */
+.guides > .content > .guide-title {
+  width: 459px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guides > .content > .guide-title > .title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  color: #000339;
+  margin: 10px 0 20px 0;
+}
+
+.guides > .content > .guide-title > .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #5a6473;
+}
+
+/* TODO: List Guide for Guides */
+.guides > .content > .list-guide {
+  margin: 70px 0 48px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guides > .content > .list-guide > .guide-item {
+  height: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guide-item > h3 {
+  margin: 26px 0 10px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #3b3c45;
+}
+
+.guide-item > .link > span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #0689ff;
+  margin-right: 4px;
+}
+
+/* TODO: Button "Sell Full Guidelines" for Guides */
+.guide-btn {
+  width: 170px;
+  height: 50px;
+}
+
+/* TODO: Featured */
+.featured {
+  margin-top: 41px;
+  width: 100%;
+}
+
+/* TODO: Featured-01 */
+.featured-01 {
+  height: 727px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5fafe;
+}
+
+.featured-01 > .content {
+  height: calc(727px - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TODO: Header for Featured-01 */
+.featured-01 > .content > header {
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-01 > .content > header > h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  color: #000339;
+}
+
+.featured-01 > .content > header > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-01 > .content > header > .row > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5a6473;
+}
+
+.featured-01 > .content > header > .row > .link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0689ff;
+  display: flex;
+  align-items: center;
+}
+
+.featured-01 > .content > header > .row > .link > span {
+  margin-right: 8px;
+}
+
+/* TODO: List Card for Featured-01 */
+.featured-01 > .content > .list-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-card > .item-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+  border-radius: 12px;
+}
+
+.list-card > .item-card > :not(img) {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.list-card > .item-card > p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000339;
+  margin: 17px 0 11px 20px;
+}
+
+.list-card > .item-card > p:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a3a6ab;
+  margin-bottom: 21px;
+}
+
+.list-card > .item-card > .convenient-icon {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-card > .item-card > .convenient-icon > div {
+  display: flex;
+  align-items: center;
+}
+
+.list-card > .item-card > .convenient-icon > div > img {
+  margin-right: 8px;
+}
+
+/* TODO: Statistic */
+.statistic {
+}
+
+.statistic .content {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.statistic .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistic .statistic-img {
+  width: 520px;
+  width: 460px;
+}
+
+.statistic > .content > .row-card {
+  height: 460px;
+  padding: 0 23px 0 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistic > .content > .row > .image {
+  position: relative;
+}
+
+.statistic > .content > .row > .image > img {
+  width: 400px;
+  height: 460px;
+  filter: drop-shadow(40px 80px 155px rgba(30, 103, 113, 0.03));
+  border-radius: 12px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: relative;
+}
+
+.featured-02 > .content > .row > .image > .trend {
+  width: 239px;
+  height: 252px;
+  position: absolute;
+  inset: 0 281px 208px -120px;
+  padding: 45px 22.89px 40.49px 21.18px;
+  background: #ffffff;
+  box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 12px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-02 > .content > .row > .image > .trend > .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-02 > .content > .row > .image > .trend > .number > h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #000339;
+}
+
+.featured-02 > .content > .row > .image > .trend > .desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a7a7a7;
+  margin-top: 8px;
+  margin-bottom: 25.51px;
+}
+
+.featured-02 > .content > .row > .image > .trend > .line {
+  background: #e9e9e9;
+  width: 100%;
+  height: 1.2px;
+  margin-bottom: 25.79px;
+}
+
+.featured-02 > .content > .row > .image > .trend > .avatar-block {
+}
+
+.avatar-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar-block > .block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar-block > .block img {
+  width: 16.34px;
+  height: 16.34px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* margin-left: -3.03px; */
+}
+
+.avatar-block > .block > .group > img:not(:first-of-type) {
+  margin-left: -3.03px;
+}
+
+.avatar-block > .block > .group {
+  display: flex;
+}
+
+.avatar-block > .block > .two {
+  width: 29.65px;
+}
+
+.avatar-block > .block > .three {
+  width: 42.96px;
+}
+
+.avatar-block > .block > .four {
+  width: 56.27px;
+}
+
+/* TODO: Infor of Featured-02 */
+.statistic .info {
+  width: 309px;
+  height: 326px;
+}
+
+.featured-02 > .content > .row > .info > .sub-title {
+  width: 269px;
+  height: 142px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #000339;
+  margin: 10px 40px 20px 0;
+}
+
+.featured-02 > .content > .row > .info > .desc {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5a6473;
+}
+
+/* TODO: Part Statistics for Featured-02 */
+.statistic .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistic .number {
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 64px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.row-qty > .qty-item > .qty-desc {
+  margin-top: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7b8087;
+}
+
+/* TODO: Subscribe */
+.subscribe {
+  margin-top: 51px;
+  margin-bottom: 55px;
+  height: 409px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe .content {
+  background-color: red;
+  position: relative;
+  padding: 39px 0;
+}
+
+.subscribe .content .background {
+  background-color: #063183;
+  height: calc(100% - 39px * 2);
+  border-radius: 20px;
+  padding: 110px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe > .content > .background > .subscribe {
+  width: 501px;
+  height: 150px;
+  margin: 110px auto auto 80px;
+}
+
+.subscribe > .content > .background > .subscribe > .sub-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.subscribe > .content > .background > .subscribe > .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.75;
+  margin: 15px auto 20px auto;
+}
+
+.subscribe .btn-subscribe {
+  width: 151px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #002366;
+}
+
+.subscribe > .content > .background > .illustration-image {
+  position: absolute;
+  inset: 1px 221px 31px 670px;
+}
+
+.subscribe .illustration-image {
+  position: absolute;
+  width: 219px;
+  height: 439px;
+  background-color: #063183;
+}
+
+/* TODO: Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: List contain Links about Company of Footer */
+.component-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.component-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.component-list .component-item .title {
+  color: #1c1c1d;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 24px;
+}
+
+.component-list .component-item .link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.component-list .component-item .link-list .link-item .link {
+  color: #7a7a7e;
+}
+
+.get-in-touch {
+}
+
+.get-in-touch .desc {
+  width: 257px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #7a7a7e;
+}
+
+.get-in-touch .social-icon-list {
+  width: 117px;
+  height: 28.47px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon-list .social-icon-item {
+  width: 28.47px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.social-icon-list .social-icon-item:hover {
+  width: 28.47px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #063183;
+  border-radius: 5px;
+}
+.social-icon-list .social-icon-item:hover svg path {
+  fill: #fff;
+}
+
+/* TODO: Part Logo and Copyright of Footer */
+.footer .bottom {
+  margin-top: 81px;
+  margin-bottom: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .coppyright {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 21px;
+  color: #c2c2c2;
+}
