@@ -175,51 +175,24 @@ h2 {
   align-items: center;
 }
 
-.client .content {
-  /* height: 228px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
-
-.client .top {
+.client .top > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.client .left {
-}
-
-.client .left .logo {
+.client .top > div:first-child {
   margin-bottom: 23px;
 }
 
-.client .right {
-}
-
-.client .right .star {
-  width: 60px;
-  height: 18px;
-  background-color: red;
+.client .top .star {
+  --number-star: 5;
+  --width-star: 22px;
+  width: calc(var(--number-star) * var(--width-star));
+  height: 19px;
   background-image: url("../image/Vector.svg");
   background-repeat: repeat-x;
   background-origin: content-box;
-}
-
-/* TODO: Logo, Star and Desc for Clients */
-.client > .content > div > .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.client > .content > div > .row-01 {
-  margin-bottom: 23px;
-}
-
-.client .content > .client-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Logo Brand of Client */
@@ -239,7 +212,7 @@ h2 {
   align-items: center;
 }
 
-.guides > .content {
+.guides .content {
   width: 685px;
   height: 427px;
   display: flex;
@@ -273,7 +246,7 @@ h2 {
   color: #5a6473;
 }
 
-/* TODO: List Guide for Guides */
+/* List Guide for Guides */
 .guides > .content > .list-guide {
   margin: 70px 0 48px 0;
   width: 100%;
@@ -306,7 +279,7 @@ h2 {
   margin-right: 4px;
 }
 
-/* TODO: Button "Sell Full Guidelines" for Guides */
+/* Button "Sell Full Guidelines" for Guides */
 .guide-btn {
   width: 170px;
   height: 50px;
@@ -673,6 +646,7 @@ h2 {
 
 /* TODO: Footer */
 .footer {
+  margin-top: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
