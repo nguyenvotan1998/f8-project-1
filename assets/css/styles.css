@@ -21,10 +21,6 @@ body {
   align-items: center;
 }
 
-.container {
-  background-color: transparent;
-}
-
 /* common */
 .content {
   width: 1110px;
@@ -203,6 +199,8 @@ h2 {
   align-items: center;
 }
 
+/* ---------------------------------------------- */
+
 /* TODO: Guides */
 .guides {
   margin-top: 40px;
@@ -221,7 +219,7 @@ h2 {
 }
 
 /* TODO: Guide Title and Desc for Guides */
-.guides > .content > .guide-title {
+.guides .guide-title {
   width: 459px;
   height: 130px;
   display: flex;
@@ -229,48 +227,46 @@ h2 {
   align-items: center;
 }
 
-.guides > .content > .guide-title > .title {
-  text-align: center;
+.guides .guide-title .title {
   font-weight: 600;
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 35px;
   color: #000339;
   margin: 10px 0 20px 0;
 }
 
-.guides > .content > .guide-title > .desc {
+.guides .guide-title .desc {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 30px;
   text-align: center;
   color: #5a6473;
 }
 
 /* List Guide for Guides */
-.guides > .content > .list-guide {
+.guides .list-guide {
   margin: 70px 0 48px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.guides > .content > .list-guide > .guide-item {
+.guides .list-guide .guide-item {
   height: 129px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.guide-item > h3 {
+.guide-item h3 {
   margin: 26px 0 10px 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 22px;
-  text-align: center;
   color: #3b3c45;
 }
 
-.guide-item > .link > span {
+.guide-item .link span {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -280,10 +276,12 @@ h2 {
 }
 
 /* Button "Sell Full Guidelines" for Guides */
-.guide-btn {
+.guides .guide-btn {
   width: 170px;
   height: 50px;
 }
+
+/* ---------------------------------------------- */
 
 /* TODO: Featured */
 .featured {
@@ -355,7 +353,7 @@ h2 {
   align-items: center;
 }
 
-.list-card > .item-card {
+.list-card .item-card {
   display: flex;
   flex-direction: column;
   background: #ffffff;
