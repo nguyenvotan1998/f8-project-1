@@ -287,123 +287,113 @@ h2 {
 .featured {
   margin-top: 41px;
   width: 100%;
-}
-
-/* TODO: Featured-01 */
-.featured-01 {
   height: 727px;
+  background-color: #f5fafe;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f5fafe;
 }
 
-.featured-01 > .content {
-  height: calc(727px - 220px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* TODO: Header for Featured-01 */
-.featured-01 > .content > header {
+/* TODO: Top of Featured */
+.featured .top {
   height: 82px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-bottom: 68px;
 }
 
-.featured-01 > .content > header > h2 {
+.featured .top .heading--lv2 {
   font-weight: 600;
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 35px;
   color: #000339;
+  margin-bottom: 15px;
 }
 
-.featured-01 > .content > header > .row {
+.featured .top div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.featured-01 > .content > header > .row > p {
+.featured .top .desc {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 30px;
   color: #5a6473;
 }
 
-.featured-01 > .content > header > .row > .link {
+.featured .top .link {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 27px;
   color: #0689ff;
   display: flex;
+  gap: 8px;
   align-items: center;
 }
 
-.featured-01 > .content > header > .row > .link > span {
-  margin-right: 8px;
-}
-
-/* TODO: List Card for Featured-01 */
-.featured-01 > .content > .list-card {
+/* TODO: List Card of Featured */
+.featured .list-card {
+  height: 357px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .list-card .item-card {
+  border-radius: 12px;
+  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
-  border-radius: 12px;
 }
 
-.list-card > .item-card > :not(img) {
+.list-card .item-card > :not(img) {
   margin-left: 20px;
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
-.list-card > .item-card > p:first-of-type {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 20px;
+.list-card .item-card .name {
+  margin-top: 17px;
+  margin-bottom: 11px;
   color: #000339;
-  margin: 17px 0 11px 20px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 20px;
 }
 
-.list-card > .item-card > p:nth-of-type(2) {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #a3a6ab;
+.list-card .item-card .address {
   margin-bottom: 21px;
+  color: #a3a6ab;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 21px;
 }
 
-.list-card > .item-card > .convenient-icon {
+.list-card .item-card .convenient-icon {
+  margin-right: 40px;
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.list-card > .item-card > .convenient-icon > div {
+.list-card .item-card .convenient-icon > div {
   display: flex;
   align-items: center;
-}
-
-.list-card > .item-card > .convenient-icon > div > img {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 /* TODO: Statistic */
 .statistic {
+  margin-top: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0689ff;
 }
 
 .statistic .content {
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
