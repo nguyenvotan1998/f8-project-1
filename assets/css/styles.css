@@ -383,6 +383,8 @@ h2 {
   gap: 8px;
 }
 
+/* -------------------------------------------------- */
+
 /* TODO: Statistic */
 .statistic {
   margin-top: 75px;
@@ -488,7 +490,7 @@ h2 {
   border-radius: 50%;
 }
 
-.avatar-block > .block > .group > img:not(:first-of-type) {
+.avatar-block .block .group > img:not(:first-of-type) {
   margin-left: -3.03px;
 }
 
@@ -557,54 +559,54 @@ h2 {
   color: #7b8087;
 }
 
+/* ------------------------------------------------------------------------------- */
+
 /* TODO: Subscribe */
 .subscribe {
   margin-top: 51px;
-  margin-bottom: 55px;
   height: 409px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .subscribe .content {
-  background-color: red;
   position: relative;
-  padding: 39px 0;
+  height: 100%;
 }
 
-.subscribe .content .background {
+.subscribe .background {
   background-color: #063183;
-  height: calc(100% - 39px * 2);
+  position: absolute;
+  top: 39px;
+  width: 100%;
+  height: calc(100% - 39px);
   border-radius: 20px;
-  padding: 110px 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 80px;
 }
 
-.subscribe > .content > .background > .subscribe {
-  width: 501px;
-  height: 150px;
-  margin: 110px auto auto 80px;
-}
-
-.subscribe > .content > .background > .subscribe > .sub-title {
+.subscribe .background .sub-title {
   font-weight: 600;
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 35px;
   color: #ffffff;
 }
 
-.subscribe > .content > .background > .subscribe > .desc {
+.subscribe .background .desc {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 30px;
   color: #ffffff;
   opacity: 0.75;
-  margin: 15px auto 20px auto;
 }
 
-.subscribe .btn-subscribe {
+.subscribe .background .btn-subscribe {
+  margin-top: 5px;
   width: 151px;
   height: 50px;
   background: #ffffff;
@@ -615,16 +617,9 @@ h2 {
   color: #002366;
 }
 
-.subscribe > .content > .background > .illustration-image {
-  position: absolute;
-  inset: 1px 221px 31px 670px;
-}
-
 .subscribe .illustration-image {
   position: absolute;
-  width: 219px;
-  height: 439px;
-  background-color: #063183;
+  inset: 1px 221.02px -30.44px 670.9px;
 }
 
 /* TODO: Footer */
