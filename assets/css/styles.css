@@ -622,9 +622,12 @@ h2 {
   inset: 1px 221.02px -30.44px 670.9px;
 }
 
+/* ---------------------------------------------------------------------------- */
+
 /* TODO: Footer */
 .footer {
   margin-top: 55px;
+  padding: 50px 0 58px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,7 +650,7 @@ h2 {
   font-family: "Lato";
   font-weight: 700;
   font-size: 2rem;
-  line-height: 24px;
+  line-height: normal;
 }
 
 .component-list .component-item .link-list {
@@ -658,9 +661,6 @@ h2 {
 
 .component-list .component-item .link-list .link-item .link {
   color: #7a7a7e;
-}
-
-.get-in-touch {
 }
 
 .get-in-touch .desc {
@@ -697,6 +697,7 @@ h2 {
   background-color: #063183;
   border-radius: 5px;
 }
+
 .social-icon-list .social-icon-item:hover svg path {
   fill: #fff;
 }
@@ -704,9 +705,9 @@ h2 {
 /* TODO: Part Logo and Copyright of Footer */
 .footer .bottom {
   margin-top: 81px;
-  margin-bottom: 58px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer .coppyright {
